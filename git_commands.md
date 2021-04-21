@@ -4,6 +4,8 @@ mkdir "directory name" used to create a new directory
 rmdir "directory name" used to remove a direcroty
 ## navegation
 cd and the route we want to move to
+## compre 
+cmp used to compare two files to know if they are identical or not
 ## config 
 git config --global user.name "your name"
 git config --global user.email "your email"
