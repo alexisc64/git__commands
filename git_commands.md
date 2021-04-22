@@ -22,7 +22,7 @@
 `git init "project name"` start a new repository 
 
 `git clone "project url"` used to download a project from a remote repository (github for example)
-# basic workflow
+## basic workflow
 
 `git init` to restart the current directory
 
@@ -33,13 +33,13 @@
 `git log` to view every commit that is added to your project
 
 `git commit -m "text"` to add the changes in your files without changing the sc>
-# push to a remote repository 
+## push to a remote repository 
 `git push -u "direction"`used to commit to a remote repository
 
-# gitflow
 `git status` to see the status of the files, you can use this to verify if you added the changes you just have done
 
-#branches
+`git remote -v` to see every remote repository
+## branches
 
 `git chechout "name"` switch branch to the brach of your election
 
@@ -53,8 +53,18 @@
 
 `git config` see the actual configutation of git
 
-# gitflow
+## gitflow
 
 `git add .` to add all files in the folder, instead of weiting one by one.
  
+`git flow init -d` to initialize a new repo with the basic configuration
+
+`git flow feature` to create a feature
+
+`git flow hotfix [start/finish] "release"`to start or finish a new hotfix branch
+fot hotfix branches, the "base" need to be a commit in "develop"
+
+`git flow support [start]`to list a suport branch.
+
+
 
