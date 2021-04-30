@@ -1,6 +1,6 @@
 # git commands
 ## create and delete directories
-`mkdir "directory name"`+ used to create a new directory; to use it you need to type this annd the directory name ex: mkdir <newfolder>
+`mkdir "directory name"` used to create a new directory; to use it you need to type this annd the directory name ex: mkdir <newfolder>
 
 
 `rmdir "directory name"` used to remove a direcroty, you need to type this folowed by the directory name. example rmdir <newfolder>
@@ -41,7 +41,7 @@
 `git whoami`  is an additional Git command that tells you what author and
 committer information would (probably) be used for a commit
 ## config
-`git config --global user.name "your name"` is used to add your username, needed to commit..
+`git config --global user.name "your name"` is used to add your username, needed to commit.
 
 `git config --global user.email "your email"` used to add your email, needed to commit.
 
@@ -129,6 +129,8 @@ for hotfix branches, the "base" need to be a commit in "develop"
 
 `git pull` to incorporate changes into other repository.
 ## gitflow
+`git flow init` to initialize a new repo with basic branch structure.
+
 To list/start/finish feature branches, use:
 
 `git flow feature`
