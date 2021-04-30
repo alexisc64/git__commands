@@ -13,9 +13,11 @@
 
 `git mv` Move or rename a file, a directory, or a symlink. example: git mv -k <project> <newfolder>
 
-
 ## navegation
 `cd <directory>` to move to the direction typed to work on it.
+
+`pwd` to check the actual location of the repo: example: $ pwd
+/c/Users/LENOVO/Desktop/proyecto
 ## compare
 `cmp` used to compare two files to know if they are identical or not
 
@@ -27,9 +29,6 @@
 `ls` check all repositories example: $ ls
  branch/  'chapter 4'/  'chapter 5'/   git/   git_commands.md
 
-`pwd` to check the actual location of the repo: example: $ pwd
-/c/Users/LENOVO/Desktop/proyecto
-
 `git grep` Print lines matching a pattern. example:-grep "hipopotomostrosesquipedaliofobia" yourtext.txt
 
 ## create and edit files
@@ -37,7 +36,7 @@
 
 `cat` output the whole file in one go example: cat "git_commands"
 ## get the state of the computer
-`history`to check the log of every comand used in this project.
+`history` to check the log of every command used in this project.
 
 `git whoami`  is an additional Git command that tells you what author and
 committer information would (probably) be used for a commit
@@ -46,7 +45,7 @@ committer information would (probably) be used for a commit
 
 `git config --global user.email "your email"` used to add your email, needed to commit.
 
-`git config --global color.iu auto`to enable some colorization of git output
+`git config --global color.iu auto` to enable some colorization of git output
 
 `git config` to check the actual configuration.
 
@@ -56,13 +55,12 @@ committer information would (probably) be used for a commit
 
 `git clone "project url"` used to download a project from a remote repository (github for example)
 
-`git fetch` to download ojects and refs from another repository
+`git fetch` to download objects and refs from another repository
 
-`git pull` to fetch from abd integrate with another repository or a local branch
+`git pull` to fetch from and integrate with another repository or a local branch
 
 `git init` to restart the current directory example: $ git init
 Reinitialized existing Git repository in C:/Users/LENOVO/Desktop/proyecto/.git/
-
 
 `git stash` to put current changes in your work directory into stash for use later
 
@@ -96,34 +94,65 @@ Reinitialized existing Git repository in C:/Users/LENOVO/Desktop/proyecto/.git/
 
 ## branches
 
-`git chechout "name"` switch branch to the brach of your election
+`git chechout "name"` switch branch to the branch of your election
 
-`git checkout -b "name"`switches the working directory to the specified directory and `-b`creates the new branch
+`git checkout -b "name"`  switches the working directory to the specified directory and `-b` creates the new branch
 
-`git merge "name"`to merge two branches, from the "name" to the current branch
+`git merge "name"` to merge two branches, from the "name" to the current branch
 
-`git branch -a`to show a list of all the local files on the folder
+`git branch -a` to show a list of all the local files on the folder
+
+`git branch -r` to show a list of all the remote branches.
 
 `git branch -d "name"` to remove the "merged" branch that now is useless.
 
 `git config` see the actual configutation of git
 
-`git restore`to restoree working tree files
+`git restore` to restore working tree files
 
-`git rebase`to reapply commits on top of another base tip
-## gitflow
+`git rebase` to reapply commits on top of another base tip
 
-`git add .` to add all files in the folder, instead of weiting one by one.
+`clear` to clear the shell window
+
+`git add .` to add all files in the folder, instead of writing one by one.
 
 `git flow init -d` to initialize a new repo with the basic configuration
 
 `git flow feature` to create a feature
 
-`git flow hotfix [start/finish] "release"`to start or finish a new hotfix branch
-fot hotfix branches, the "base" need to be a commit in "develop"
+`git flow hotfix [start/finish] "release"` to start or finish a new hotfix branch
+for hotfix branches, the "base" need to be a commit in "develop"
 
 `git flow support [start]`to list a suport branch.
 
 `history` to see all the used commands
 
 `git pull` to incorporate changes into other repository.
+## gitflow
+To list/start/finish feature branches, use:
+
+`git flow feature`
+
+`git flow feature finish name`
+
+To list/start/finish release branches, use:
+
+`git flow release`
+
+`git flow release start release <base>`
+
+`git flow release finish release`
+
+To list/start/finish hotfix branches, use:
+
+`git flow hotfix`
+
+`git flow hotfix start release <base>`
+
+`git flow hotfix finish release`
+
+To list/start support branches, use:
+
+`git flow support`
+
+`git flow support start release <base>`
