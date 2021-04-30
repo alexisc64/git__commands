@@ -15,10 +15,12 @@
 
 
 ## navegation
-`cd` and the route we want to move to between directories
-example: "md desktop" to go direct to desktop
+`cd <directory>` to move to the direction typed to work on it.
 ## compare
 `cmp` used to compare two files to know if they are identical or not
+
+`git diff` Show changes between commits, commit and working tree, etc. example: git diff [options] -- <project>
+
 ## Find Files
 `find [route] "name/extension"` write the location of the file you want to find
 
@@ -28,11 +30,17 @@ example: "md desktop" to go direct to desktop
 `pwd` to check the actual location of the repo: example: $ pwd
 /c/Users/LENOVO/Desktop/proyecto
 
+`git grep` Print lines matching a pattern. example:-grep "hipopotomostrosesquipedaliofobia" yourtext.txt
+
 ## create and edit files
-`nano` is the easiest way to create and edit files directly from git. for example, i use nano to edit this file with "nano git_commands"
-`cat` output the whole file in one go
+`nano` is the easiest way to create and edit files directly from git. example: nano "git_commands.md"
+
+`cat` output the whole file in one go example: cat "git_commands"
 ## get the state of the computer
-`lscpu`
+`history`to check the log of every comand used in this project.
+
+`git whoami`  is an additional Git command that tells you what author and
+committer information would (probably) be used for a commit
 ## config
 `git config --global user.name "your name"` is used to add your username, needed to commit..
 
@@ -67,9 +75,9 @@ Reinitialized existing Git repository in C:/Users/LENOVO/Desktop/proyecto/.git/
 `git commit` to save a snapshot, a state of your files
 
 `git log` to view every commit that is added to your project. example: $ git log
-commit fd0259e82063de2569a4ddcae18261c5d754c81f (HEAD -> main, origin/main)
-Author: alexis <2009020@upy.edu.mx>
-Date:   Thu Apr 22 19:53:16 2021 -0500
+    commit fd0259e82063de2569a4ddcae18261c5d754c81f (HEAD -> main, origin/main)
+    Author: alexis <2009020@upy.edu.mx>
+    Date:   Thu Apr 22 19:53:16 2021 -0500
 
     final details
 
@@ -78,13 +86,13 @@ Date:   Thu Apr 22 19:53:16 2021 -0500
 
 `git reflog` to list operations for example, checkouts or commits made on local repository
 
-`git commit -m "text"` to add the changes in your files without changing the sc>
+`git commit -m "text"` to add the changes in your files without changing the screen.
 ## push to a remote repository
 `git push -u "direction"` used to commit to a remote repository
 
 `git status` to see the status of the files, you can use this to verify if you added the changes you just have done
 
-`git remote -v` to see every remote repository
+`git remote -v` to see the different remote repositories.
 
 ## branches
 
