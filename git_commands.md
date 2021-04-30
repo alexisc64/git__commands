@@ -1,9 +1,19 @@
 # git commands
-## command line
-`mkdir "directory name"`+ used to create a new directory; to use it you need to type this annd the directory name ex: mkdir git_branch
+## create and delete directories
+`mkdir "directory name"`+ used to create a new directory; to use it you need to type this annd the directory name ex: mkdir <newfolder>
 
 
-`rmdir "directory name"` used to remove a direcroty, you need to type this folowed by the directory name.
+`rmdir "directory name"` used to remove a direcroty, you need to type this folowed by the directory name. example rmdir <newfolder>
+
+`git cp` a convenient only subcommand for git that does cp(1) and git-add(1) example: git cp [option] <project> <newfolder>
+
+`git-touch` provides a convenient way to create one or more empty files and get them staged. If a specified file already exists, it just adds the path to the index using `git add -N file`.
+
+`git-untouch` undoes what git-touch(1) has done. example; git untouch <project>
+
+`git mv` Move or rename a file, a directory, or a symlink. example: git mv -k <project> <newfolder>
+
+
 ## navegation
 `cd` and the route we want to move to between directories
 example: "md desktop" to go direct to desktop
@@ -14,11 +24,13 @@ example: "md desktop" to go direct to desktop
 
 `ls` check all repositories example: $ ls
  branch/  'chapter 4'/  'chapter 5'/   git/   git_commands.md
+
 `pwd` to check the actual location of the repo: example: $ pwd
 /c/Users/LENOVO/Desktop/proyecto
 
 ## create and edit files
 `nano` is the easiest way to create and edit files directly from git. for example, i use nano to edit this file with "nano git_commands"
+`cat` output the whole file in one go
 ## get the state of the computer
 `lscpu`
 ## config
@@ -27,50 +39,8 @@ example: "md desktop" to go direct to desktop
 `git config --global user.email "your email"` used to add your email, needed to commit.
 
 `git config --global color.iu auto`to enable some colorization of git output
-`git config` to check the actual configuration. example: $ git config
-usage: git config [<options>]
 
-Config file location
-    --global              use global config file
-    --system              use system config file
-    --local               use repository config file
-    --worktree            use per-worktree config file
-    -f, --file <file>     use given config file
-    --blob <blob-id>      read config from given blob object
-
-Action
-    --get                 get value: name [value-pattern]
-    --get-all             get all values: key [value-pattern]
-    --get-regexp          get values for regexp: name-regex [value-pattern]
-    --get-urlmatch        get value specific for the URL: section[.var] URL
-    --replace-all         replace all matching variables: name value [value-pattern]
-    --add                 add a new variable: name value
-    --unset               remove a variable: name [value-pattern]
-    --unset-all           remove all matches: name [value-pattern]
-    --rename-section      rename section: old-name new-name
-    --remove-section      remove a section: name
-    -l, --list            list all
-    --fixed-value         use string equality when comparing values to 'value-pattern'
-    -e, --edit            open an editor
-    --get-color           find the color configured: slot [default]
-    --get-colorbool       find the color setting: slot [stdout-is-tty]
-
-Type
-    -t, --type <>         value is given this type
-    --bool                value is "true" or "false"
-    --int                 value is decimal number
-    --bool-or-int         value is --bool or --int
-    --bool-or-str         value is --bool or string
-    --path                value is a path (file or directory name)
-    --expiry-date         value is an expiry date
-
-Other
-    -z, --null            terminate values with NUL byte
-    --name-only           show variable names only
-    --includes            respect include directives on lookup
-    --show-origin         show origin of config (file, standard input, blob, command line)
-    --show-scope          show scope of config (worktree, local, global, system, command)
-    --default <value>     with --get, use default value when missing entry
+`git config` to check the actual configuration.
 
 
 ## start
