@@ -17,7 +17,7 @@
 `cd <directory>` to move to the direction typed to work on it.
 
 `pwd` to check the actual location of the repo: example: $ pwd
-/c/Users/LENOVO/Desktop/proyecto
+/c/Users/Desktop/Project
 ## compare
 `cmp` used to compare two files to know if they are identical or not
 
@@ -27,7 +27,7 @@
 `find [route] "name/extension"` write the location of the file you want to find
 
 `ls` check all repositories example: $ ls
- branch/  'chapter 4'/  'chapter 5'/   git/   git_commands.md
+ branch/  'example 4'/  'example 5'/   git/   git_commands.md
 
 `git grep` Print lines matching a pattern. example:-grep "hipopotomostrosesquipedaliofobia" yourtext.txt
 
@@ -74,7 +74,7 @@ Reinitialized existing Git repository in C:/Users/LENOVO/Desktop/proyecto/.git/
 
 `git log` to view every commit that is added to your project. example: $ git log
     commit fd0259e82063de2569a4ddcae18261c5d754c81f (HEAD -> main, origin/main)
-    Author: alexis <2009020@upy.edu.mx>
+    Author: alexis <alexis@example.com>
     Date:   Thu Apr 22 19:53:16 2021 -0500
 
     final details
